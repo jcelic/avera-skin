@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Naturally Sourced",
+    "description": "Carefully selected ingredients inspired by nature.",
+    "icon": "assets/icons/magic-wand.svg"
+  },
+  {
+    "name": "Gentle Formulas",
+    "description": "Thoughtfully formulated for a soft, comfortable everyday skincare experience.",
+    "icon": "assets/icons/balloon.svg"
+  },
+  {
+    "name": "Made with Care",
+    "description": "Every formula is created with attention to quality, texture and feel.",
+    "icon": "assets/icons/people.svg"
+  },
+  {
+    "name": "Skin-loving",
+    "description": "Simple, effective products designed to support your daily routine.",
+    "icon": "assets/icons/coupon.svg"
+  },
+  {
+    "name": "Consciously created",
+    "description": "A mindful approach to beauty, from formulation to the final product.",
+    "icon": "assets/icons/gift.svg"
+  }
+]

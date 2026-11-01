@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600&family=Philosopher:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Avera Skin</title>
+  </head>
+  <body>
+    <!---------- HEADER ---------->
+
+    <header>
+      <nav>
+        <a href="#home" class="logo">Avera Skin</a>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          <svg
+            class="icon-open"
+            width="24"
+            height="24"
+            viewBox="0 0 25 25"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M21.0022 6.00488L3.00219 6.00488"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke="currentColor"
+            />
+            <path
+              d="M3.14284 13.5681L20.8694 10.4424"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke="currentColor"
+            />
+            <path
+              d="M21.0022 18.0049H3.00219"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke="currentColor"
+            />
+          </svg>
+
+          <svg
+            class="icon-close"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"
+            />
+          </svg>
+        </button>
+
+        <ul class="nav-list" id="nav-list">
+          <li>
+            <a href="#home" class="active">Home</a>
+          </li>
+          <li class="news">
+            <button type="button" aria-expanded="false">
+              News
+              <svg
+                width="11"
+                height="7"
+                viewBox="0 0 10 6"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8.74951 0.75L4.74977 4.74908L0.750019 0.75"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="currentColor"
+                />
+              </svg>
+            </button>
+
+            <div class="news-dropdown">
+              <ul>
+                <li>
+                  <a href="/news/category-1">Category 1</a>
+                </li>
+
+                <li>
+                  <a href="/news/category-2">Category 2</a>
+                </li>
+
+                <li>
+                  <a href="/news/category-3">Category 3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#events">Events</a>
+          </li>
+          <li>
+            <a href="/team">Team</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-overlay"></div>
+
+        <div class="nav-actions">
+          <div class="language">
+            <button type="button" class="language-btn" aria-expanded="false">
+              <span class="language-current">Eng</span>
+              <img src="assets/icons/chevron.svg" alt="" />
+            </button>
+
+            <div class="language-dropdown">
+              <ul>
+                <li>
+                  <button type="button">
+                    Eng <img src="assets/icons/check.svg" alt="" />
+                  </button>
+                </li>
+
+                <li>
+                  <button type="button">Esp</button>
+                </li>
+
+                <li>
+                  <button type="button">Ger</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="search-btn" aria-label="Search">
+            <img src="assets/icons/search.svg" alt="" />
+          </button>
+          <button type="button" class="login-btn">
+            <span class="login-text">Login</span>
+            <img src="assets/icons/login.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!---------- HERO ---------->
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="hero-subtitle">Find your care</p>
+          <h1>Natural care, made for your skin</h1>
+          <p class="hero-description">
+            Thoughtfully formulated skincare with carefully selected natural
+            ingredients for everyday balance, nourishment and healthy-looking
+            skin.
+          </p>
+
+          <a href="#categories" class="hero-btn"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M9.25 9.25L11.0208 11.0208"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+                stroke="currentColor"
+              />
+              <path
+                d="M14.6102 14.6098C14.201 15.0189 13.5376 15.0189 13.1284 14.6098L10.974 12.4553C10.5648 12.0461 10.5648 11.3827 10.974 10.9735C11.3832 10.5643 12.0466 10.5643 12.4558 10.9735L14.6102 13.128C15.0194 13.5372 15.0194 14.2006 14.6102 14.6098Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke="currentColor"
+              />
+              <path
+                d="M10.6667 5.70833C10.6667 2.96992 8.44675 0.75 5.70833 0.75C2.96992 0.75 0.75 2.96992 0.75 5.70833C0.75 8.44675 2.96992 10.6667 5.70833 10.6667C8.44675 10.6667 10.6667 8.44675 10.6667 5.70833Z"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+                stroke="currentColor"
+              />
+            </svg>
+            Explore Products</a
+          >
+        </div>
+      </section>
+
+      <!---------- CATEGORIES ---------->
+
+      <section class="categories reveal" id="categories">
+        <div class="container">
+          <h2>Categories</h2>
+          <div class="categories-list"></div>
+        </div>
+      </section>
+
+      <!---------- EVENTS ---------->
+
+      <section class="events reveal" id="events">
+        <div class="container">
+          <div class="events-content">
+            <div class="events-info">
+              <p class="events-label">Upcoming events</p>
+              <h2>Find your next ritual</h2>
+              <p class="events-description">
+                Discover upcoming workshops, skincare sessions and special
+                events created to bring you closer to your skin — and the
+                ingredients behind every formula.
+              </p>
+
+              <div class="events-filters">
+                <label for="events-category">Category</label>
+                <select id="events-category">
+                  <option value="all">All</option>
+                  <option value="Special Event">Special Event</option>
+                  <option value="Workshop">Workshop</option>
+                  <option value="Online">Online</option>
+                </select>
+
+                <label for="events-sort">Sort by date</label>
+                <select id="events-sort">
+                  <option value="asc">Oldest first</option>
+                  <option value="desc">Newest first</option>
+                </select>
+              </div>
+            </div>
+            <ul class="events-list"></ul>
+
+            <button type="button" class="events-btn">
+              <span>View all</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M16.6583 9.98332H4.16667"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="currentColor"
+                />
+                <path
+                  d="M11.6558 4.98999L16.665 9.99999L11.6558 15.01"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!---------- JOURNAL ---------->
+
+      <section class="journal reveal">
+        <div class="container">
+          <div class="journal-content">
+            <div class="journal-info">
+              <p class="journal-label">Journal</p>
+              <h2>Discover what’s new</h2>
+              <p class="journal-description">
+                Discover upcoming workshops, skincare sessions and special
+                events created to bring you closer to your skin — and the
+                ingredients behind every formula.
+              </p>
+
+              <button type="button" class="journal-btn">
+                <span>View all</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16.6583 9.98332H4.16667"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="currentColor"
+                  />
+                  <path
+                    d="M11.6558 4.98999L16.665 9.99999L11.6558 15.01"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <ul class="journal-grid"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---------- FOOTER ---------->
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+              <img src="assets/icons/logo.svg" alt="Avera Skin" />
+            </a>
+            <ul class="social">
+              <li>
+                <a href="https://x.com" aria-label="X">
+                  <img src="assets/icons/x.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com" aria-label="Facebook">
+                  <img src="assets/icons/facebook.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com" aria-label="Instagram">
+                  <img src="assets/icons/instagram.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="https://tiktok.com" aria-label="TikTok">
+                  <img src="assets/icons/tiktok.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" aria-label="LinkedIn">
+                  <img src="assets/icons/linkedin.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <nav>
+              <h2>General</h2>
+              <ul>
+                <li>
+                  <a href="/about">About us</a>
+                </li>
+
+                <li>
+                  <a href="/locations">Locations</a>
+                </li>
+
+                <li>
+                  <a href="/faq">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav>
+              <h2>Webshop</h2>
+              <ul>
+                <li>
+                  <a href="/date-time">Date & Time</a>
+                </li>
+
+                <li>
+                  <a href="/insurance">Insurance</a>
+                </li>
+
+                <li>
+                  <a href="/payment">Payment</a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav>
+              <h2>Blog</h2>
+              <ul>
+                <li>
+                  <a href="/vacation-skincare">Vacation skincare</a>
+                </li>
+
+                <li>
+                  <a href="/skincare-tips">Tips for skincare</a>
+                </li>
+
+                <li>
+                  <a href="/healthier-looks">Healthier look</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-newsletter">
+            <h2>Sign up to our newsletter</h2>
+            <form class="newsletter-form" novalidate>
+              <label for="newsletter-email" class="visually-hidden"
+                >Email address</label
+              >
+              <div class="newsletter-field">
+                <img src="assets/icons/mail.svg" alt="" />
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                  aria-describedby="newsletter-message"
+                />
+              </div>
+              <button type="submit">Subscribe</button>
+              <p
+                class="newsletter-message"
+                id="newsletter-message"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Avera.com. All rights reserved.</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="/privacy-policy">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="/gdpr-statement">GDPR Statement</a>
+              </li>
+
+              <li>
+                <a href="/careers">Careers</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" aria-live="polite"></div>
+
+    <!---------- SEARCH MODAL ---------->
+
+    <dialog
+      class="modal"
+      id="search-modal"
+      aria-labelledby="search-modal-title"
+    >
+      <div class="modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"
+            />
+          </svg>
+        </button>
+        <div class="modal-content">
+          <h2 id="search-modal-title">Search</h2>
+          <label for="search-input" class="visually-hidden"
+            >Search events and articles</label
+          >
+          <input
+            type="search"
+            id="search-input"
+            class="search-input"
+            placeholder="Search events and articles"
+            autofocus
+          />
+          <ul class="search-results"></ul>
+          <p class="search-message" aria-live="polite"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <!---------- LOGIN MODAL ---------->
+
+    <dialog class="modal" id="login-modal" aria-labelledby="login-modal-title">
+      <div class="modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"
+            />
+          </svg>
+        </button>
+        <div class="modal-content">
+          <h2 id="login-modal-title">Login</h2>
+
+          <form class="login-form" novalidate>
+            <label for="login-email">Email</label>
+            <input
+              type="email"
+              id="login-email"
+              name="email"
+              required
+              aria-describedby="login-email-error"
+              autofocus
+            />
+            <p class="login-error" id="login-email-error"></p>
+
+            <label for="login-password">Password</label>
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              required
+              aria-describedby="login-password-error"
+            />
+            <p class="login-error" id="login-password-error"></p>
+
+            <button type="submit">Log in</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!---------- JOURNAL MODAL ---------->
+
+    <dialog
+      class="modal"
+      id="journal-modal"
+      aria-labelledby="journal-modal-title"
+    >
+      <div class="modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"
+            />
+          </svg>
+        </button>
+        <div class="modal-content"></div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
